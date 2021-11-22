@@ -1,0 +1,52 @@
+@mixin cta($bg, $clr, $hv) {
+  background-color: $bg;
+  padding: 12px 17px;
+  border-radius: 30px;
+  transition: all 0.5s;
+  &:hover {
+    background-color: $hv;
+  }
+  @extend .flex;
+  a {
+    color: $clr;
+    font-size: 70%;
+  }
+}
+
+@mixin serbox($bg, $clr, $url, $op) {
+  width: 300px;
+  min-height: 400px;
+  background-image: linear-gradient($bg, $bg), url($url);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  transition: all 0.5s;
+  margin-top: 1rem;
+  &::before {
+    transition: all 0.5s;
+    content: "";
+    display: block;
+    width: 40px;
+    height: 100px;
+    position: absolute;
+    background-color: $op;
+    margin-top: -7px;
+    margin-left: -7px;
+    left: -1%;
+    top: -1%;
+    z-index: 3;
+  }
+  &:hover {
+    transform: translateY(-10px);
+  }
+
+  p {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    color: $op;
+    @extend .flex;
+    text-align: center;
+    font-weight: 900;
+    min-height: 100px;
+  }
+}

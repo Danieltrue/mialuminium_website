@@ -1,0 +1,23 @@
+.__footer__ {
+  min-height: 200px;
+  background-color: #212121;
+  @extend .flex;
+  .__footer__inner__ {
+    height: 50%;
+    width: 100%;
+    color: #fff;
+    flex-direction: column;
+    .right {
+      padding: 1rem 0;
+      border-bottom: 0.1px solid rgb(54, 54, 54);
+      width: 90%;
+      text-align: center;
+      p {
+        font-size: 80%;
+      }
+    }
+    .right2 {
+      margin-top: 1rem;
+    }
+  }
+}

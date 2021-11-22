@@ -1,0 +1,45 @@
+.__about__us__ {
+  min-height: 300px;
+  div {
+    padding: 3rem;
+    hgroup {
+      margin-bottom: 10px;
+      h3 {
+        font-weight: 300;
+        &::after {
+          content: "";
+          width: 100px;
+          background-color: $brandpurple-05;
+          display: block;
+          height: 2px;
+          margin-top: 20px;
+        }
+      }
+    }
+    p {
+      margin-top: 1.5rem;
+      line-height: 190%;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .__about__us__ {
+    div.row {
+      padding: 2.5rem;
+    }
+  }
+  p {
+    font-size: 80%;
+    line-height: 145%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .__about__us__ {
+    & > div.row {
+      padding: 2rem;
+    }
+  }
+  p {
+    font-size: 70%;
+  }
+}

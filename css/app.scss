@@ -1,0 +1,42 @@
+@import "./components/color";
+@import "./components/mix";
+@import "./components/about";
+@import "./components/main";
+@import "./components/nav";
+@import "./components/header";
+@import "./components/goal";
+@import "./components/services";
+@import "./components/form";
+@import "./components/footer";
+@import "./components/thank";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html {
+  font-family: "lato", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  color: #555;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+body {
+  cursor: default;
+}

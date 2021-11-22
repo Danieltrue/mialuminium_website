@@ -1,0 +1,48 @@
+.__goal___ {
+  background-image: linear-gradient(
+      rgba(170, 20, 240, 0.5),
+      rgba(170, 20, 240, 0.5)
+    ),
+    url("/assets/images/roof.jpeg");
+  background-position: center;
+  background-size: cover;
+  min-height: 300px;
+  padding: 1rem;
+  @extend .flex;
+  color: #fff;
+  font-size: 120%;
+  .__goal__text__ {
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      button {
+        @include cta(#000, #fff, $brandwhite);
+        margin-top: 2.4rem;
+        &:hover {
+          a {
+            color: #000;
+          }
+        }
+      }
+      h4 {
+        background-color: $branddrak;
+        color: #fff;
+        padding: 0 1rem;
+        margin-bottom: 0.8rem;
+      }
+      p {
+        font-size: 90%;
+        font-weight: 400;
+      }
+      p.__main__goal__ {
+        font-weight: 400;
+        text-align: center;
+        font-style: italic;
+        color: $branddrak;
+        background-color: #fff;
+        padding: 0 0.5rem;
+      }
+    }
+  }
+}
